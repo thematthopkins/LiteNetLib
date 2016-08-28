@@ -84,7 +84,7 @@ namespace LiteNetLib
         /// </summary>
         public override void Stop()
         {
-            CloseConnection(false, "Stop method called"); 
+            CloseConnection(false, "Stop method called");
         }
 
         protected override void ProcessError(string errorMessage)
@@ -261,7 +261,7 @@ namespace LiteNetLib
                 return;
             }
 
-            //Check endpoint 
+            //Check endpoint
             if (!_peer.EndPoint.Equals(remoteEndPoint))
             {
                 NetUtils.DebugWriteForce(ConsoleColor.DarkCyan, "[NC] Bad EndPoint " + remoteEndPoint);
